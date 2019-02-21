@@ -35,15 +35,15 @@
                     @endif
                   </div>
 
-                  <div class="form-group {{ $errors->has('jenis_kelamin') ? 'has-error':'' }}">
-                    <select name="jenis_kelamin" class="form-control form-control-user" required>
+                  <div class="form-group {{ $errors->has('gender') ? 'has-error':'' }}">
+                    <select name="gender" class="form-control form-control-user" required>
                       <option value="" style="display:none;">-- Pilih Jenis Kelamin --</option>
-                      <option value="Laki-Laki" {{ old('jenis_kelamin') == 'Laki-Laki'? 'selected':'' }}>Laki-Laki</option>
-                      <option value="Perempuan" {{ old('jenis_kelamin') == 'Perempuan'? 'selected':'' }}>Perempuan</option>
+                      <option value="Laki-Laki" {{ old('gender') == 'Laki-Laki'? 'selected':'' }}>Laki-Laki</option>
+                      <option value="Perempuan" {{ old('gender') == 'Perempuan'? 'selected':'' }}>Perempuan</option>
                     </select>
 
-                    @if ($errors->has('jenis_kelamin'))
-                        <p class="text-danger">{{ $errors->first('jenis_kelamin') }}</p>
+                    @if ($errors->has('gender'))
+                        <p class="text-danger">{{ $errors->first('gender') }}</p>
                     @endif
                   </div>
 
@@ -63,11 +63,11 @@
                     @endif
                   </div>
 
-                  <div class="form-group {{ $errors->has('no_hp') ? 'has-error':'' }}">
-                    <input type="number" class="form-control form-control-user" name="no_hp" placeholder="Masukan No HP/WA..." value="{{ old('no_hp') }}" required>
+                  <div class="form-group {{ $errors->has('phone_number') ? 'has-error':'' }}">
+                    <input type="number" class="form-control form-control-user" name="phone_number" placeholder="Masukan No HP/WA..." value="{{ old('phone_number') }}" required>
 
-                    @if ($errors->has('no_hp'))
-                        <p class="text-danger">{{ $errors->first('no_hp') }}</p>
+                    @if ($errors->has('phone_number'))
+                        <p class="text-danger">{{ $errors->first('phone_number') }}</p>
                     @endif
                   </div>
 

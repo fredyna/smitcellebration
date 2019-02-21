@@ -16,14 +16,15 @@ class CreateEventsTable extends Migration
         Schema::create('events', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('jenis_kelamin');
+            $table->string('gender');
             $table->string('instance');
             $table->string('email');
-            $table->string('no_hp');
+            $table->string('phone_number');
             $table->text('address');
             $table->string('type');
             $table->string('workshop')->nullable();
-            $table->boolean('status')->default(false);
+            $table->boolean('payment')->default(false);
+            $table->boolean('attend')->default(false);
             $table->timestamps();
 
             $table->unique(['email', 'type']);

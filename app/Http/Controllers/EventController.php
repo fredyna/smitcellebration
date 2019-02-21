@@ -30,7 +30,7 @@ class EventController extends Controller
     {
         $this->validate($request, [
             'name'          => 'required',
-            'jenis_kelamin' => [
+            'gender' => [
                 'required',
                 Rule::in(['Laki-Laki', 'Perempuan']),
             ],
@@ -42,7 +42,7 @@ class EventController extends Controller
                     return $query->where('type', $request->type);
                 }),
             ],
-            'no_hp'         => 'required',
+            'phone_number'         => 'required',
             'address'       => 'required',     
             'type'          => 'required',        
         ]);
@@ -63,10 +63,10 @@ class EventController extends Controller
         $data = [
             'type'          => $request->type,
             'name'          => $request->name,
-            'jenis_kelamin' => $request->jenis_kelamin,
+            'gender'        => $request->gender,
             'instance'      => $request->instance,
             'email'         => $request->email,
-            'no_hp'         => $request->no_hp,
+            'phone_number'         => $request->phone_number,
             'address'       => $request->address,
             'workshop'      => $request->type == 'Workshop' ? $request->workshop:null,
         ];
@@ -74,7 +74,7 @@ class EventController extends Controller
         $event = Event::create($data);
 
         if($event){
-            Mail::to($event->email)->send(new RegistrationEventMail($event));
+            // Mail::to($event->email)->send(new RegistrationEventMail($event));
             return redirect()->back()->with('success', 'Registrasi Berhasil. Silahkan cek email untuk informasi selanjutnya, jika tidak ditemukan maka cek email spam!');
         } else {
             return redirect()->back()->with('error', 'Registrasi Gagal, silahkan coba lagi dan pastikan data dicek terlebih dahulu.');
@@ -98,8 +98,7 @@ class EventController extends Controller
         $this->validate($request, [
             'type'          => 'required',
             'name'          => 'required',
-            'jenis_kelamin' => 'required',
-            'jenis_kelamin' => [
+            'gender'        => [
                 'required',
                 Rule::in(['Laki-Laki', 'Perempuan']),
             ],
@@ -111,7 +110,7 @@ class EventController extends Controller
                     return $query->where('type', $request->type);
                 }),
             ],
-            'no_hp'         => 'required',
+            'phone_number'         => 'required',
             'address'       => 'required',             
         ]);
 

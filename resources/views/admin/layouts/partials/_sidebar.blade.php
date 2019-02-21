@@ -25,14 +25,14 @@
   </li>
 
   <li id="menu-participants" class="nav-item">
-    <a class="nav-link collapsed" href="{{ route('admin.participants') }}" data-toggle="collapse" data-target="#participants-collapse" aria-expanded="true" aria-controls="collapseTwo">
+    <a class="nav-link collapsed" href="javascript:void(0)" data-toggle="collapse" data-target="#participants-collapse" aria-expanded="true" aria-controls="collapseTwo">
       <i class="fas fa-fw fa-users"></i>
       <span>Participants</span>
     </a>
     <div id="participants-collapse" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
       <div class="bg-white py-2 collapse-inner rounded">
         <h6 class="collapse-header">Registered Participants:</h6>
-        <a id="sub-menu-new" class="collapse-item" href="buttons.html">New Participants</a>
+        <a id="sub-menu-new" class="collapse-item" href="{{ route('admin.participants.new') }}">New Participants</a>
         <a id="sub-menu-seminar" class="collapse-item" href="cards.html">National Seminar</a>
         <a id="sub-menu-workshop" class="collapse-item" href="cards.html">Workshop</a>
         <a id="sub-menu-competition" class="collapse-item" href="cards.html">E-Spot Competition</a>

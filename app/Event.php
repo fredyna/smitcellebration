@@ -7,16 +7,21 @@ use Illuminate\Database\Eloquent\Model;
 class Event extends Model
 {
     protected $fillable = [
-        'name', 'jenis_kelamin', 'instance', 'email', 'no_hp', 'address', 'type', 'workshop'
+        'name', 'gender', 'instance', 'email', 'phone_number', 'address', 'type', 'workshop'
     ];
+
+    public function scopeNewParticipants($query)
+    {
+        return $query->where('payment', false)->orderBy('created_at', 'desc');
+    }
 
     public function scopeSeminar($query)
     {
-        return $query->where('type', 'Seminar')->where('status', true);
+        return $query->where('type', 'Seminar')->where('payment', true);
     }
 
     public function scopeWorkshop($query, $workshop)
     {
-        return $query->where('type', 'Workshop')->where('workshop', $workshop)->where('status', true);
+        return $query->where('type', 'Workshop')->where('workshop', $workshop)->where('payment', true);
     }
 }

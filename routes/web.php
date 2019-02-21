@@ -23,7 +23,12 @@ Route::post('/event/competition', 'EventController@storeCompetition')->name('eve
 
 Route::group(['prefix' => 'admin'], function() {
     Route::get('/', 'Admin\HomeController@index')->name('admin.home');
-    Route::get('/participants', 'Admin\Participants@index')->name('admin.participants');
+    Route::get('/participants', 'Admin\ParticipantsController@index')->name('admin.participants.new');
+    Route::get('/participants/show/{id}', 'Admin\ParticipantsController@show')->name('admin.participants.show');
+    Route::get('/participants/accept/{id}', 'Admin\ParticipantsController@accept')->name('admin.participants.accept');
+    Route::get('/participants/{id}/edit', 'Admin\ParticipantsController@edit')->name('admin.participants.edit');;
+    Route::post('/participants/{id}', 'Admin\ParticipantsController@destroy')->name('admin.participants.delete');
+    Route::patch('/participants/{id}', 'Admin\ParticipantsController@update')->name('admin.participants.update');
 });
 
 
