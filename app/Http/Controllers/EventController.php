@@ -37,7 +37,7 @@ class EventController extends Controller
                     return $query->where('type', $request->type);
                 }),
             ],
-            'phone_number'         => 'required',
+            'phone_number'         => 'required|min:10|max:13',
             'address'       => 'required',     
             'type'          => 'required',        
         ]);

@@ -25,7 +25,7 @@ class CompetitionController extends Controller
                 Rule::in(['Laki-Laki', 'Perempuan']),
             ],
             'email'              => 'required|email|unique:competitions',
-            'phone_number'       => 'required',       
+            'phone_number'       => 'required|min:10|max:13',       
         ]);
 
         if($request->member_2 != '')
