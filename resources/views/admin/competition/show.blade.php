@@ -5,7 +5,7 @@
   <div class="container-fluid">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-4 text-gray-800"><i class="fas fa-fw fa-users"></i> Participants <small>/ View Participant</small></h1>
+    <h1 class="h3 mb-4 text-gray-800"><i class="fas fa-fw fa-users"></i> Competition <small>/ View Member</small></h1>
 
     <!-- div row -->
     <div class="row">
@@ -13,7 +13,7 @@
       <div class="col-sm-12">
         <div class="card shadow mb-4">
           <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">View Data Participant</h6>
+            <h6 class="m-0 font-weight-bold text-primary">View Data Member</h6>
           </div>
             <div class="card-body">
                 <!-- flash message -->
@@ -21,64 +21,69 @@
                 <!-- end flash message -->
 
                 <div class="form-group row">
-                    <label class="col-sm-3 col-form-label">Type</label>
+                    <label class="col-sm-3 col-form-label">Team Name</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control-plaintext" value="{{ $participant->type == 'Seminar' ? 'Seminar Nasional':'Workshop' }}" readonly>
+                        <input type="text" class="form-control-plaintext" value="{{ $member->team_name }}" readonly>
                     </div>
                 </div>
 
-                @if ($participant->type == 'Workshop')
-                    <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">Workshop Type</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control-plaintext" value="{{ $participant->workshop }}" readonly>
-                        </div>
-                    </div>
-                @endif
-
                 <div class="form-group row">
-                    <label class="col-sm-3 col-form-label">Name</label>
+                    <label class="col-sm-3 col-form-label">Team Leader</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control-plaintext" value="{{ $participant->name }}" readonly>
+                        <input type="text" class="form-control-plaintext" value="{{ $member->leader_name }}" readonly>
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <label class="col-sm-3 col-form-label">Gender</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control-plaintext" value="{{ $participant->gender }}" readonly>
+                        <input type="text" class="form-control-plaintext" value="{{ $member->leader_gender }}" readonly>
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <label class="col-sm-3 col-form-label">Instance</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control-plaintext" value="{{ $participant->instance }}" readonly>
+                        <input type="text" class="form-control-plaintext" value="{{ $member->instance }}" readonly>
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <label class="col-sm-3 col-form-label">Email</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control-plaintext" value="{{ $participant->email }}" readonly>
+                        <input type="text" class="form-control-plaintext" value="{{ $member->email }}" readonly>
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <label class="col-sm-3 col-form-label">No HP/WA</label>
                     <div class="col-sm-9">
-                        <input type="number" class="form-control-plaintext" value="{{ $participant->phone_number }}" readonly>
+                        <input type="number" class="form-control-plaintext" value="{{ $member->phone_number }}" readonly>
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label class="col-sm-3 col-form-label">Address</label>
+                    <label class="col-sm-3 col-form-label">Member 1</label>
                     <div class="col-sm-9">
-                        <textarea class="form-control-plaintext" rows="3" readonly>{{ $participant->address }}</textarea>
+                        <input type="text" class="form-control-plaintext" value="{{ $member->member_1 }}" readonly>
                     </div>
                 </div>
 
-                @if (!$participant->payment)
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Member 2</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control-plaintext" value="{{ $member->member_2 }}" readonly>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Member 3</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control-plaintext" value="{{ $member->member_3 }}" readonly>
+                    </div>
+                </div>
+
+                @if (!$member->payment)
                     <button type="button" class="btn btn-success" onclick="acceptParticipant()"><i class="fas fa-check"></i> Accept</button>
                 @endif
             </div>
@@ -96,14 +101,14 @@
 
     <script>
         $(function(){
-            $("#menu-participants").addClass('active');
+            $("#menu-competition").addClass('active');
         });
 
         function acceptParticipant()
         {
             let y = confirm('Are you sure to accept this ?');
             if(y==true){
-                window.location.href = "{{ route('admin.participants.accept', $participant->id) }}";
+                window.location.href = "{{ route('admin.competition.accept', $member->id) }}";
             }
         }
     </script>

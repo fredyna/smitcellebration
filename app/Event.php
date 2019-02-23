@@ -20,7 +20,12 @@ class Event extends Model
         return $query->where('type', 'Seminar')->where('payment', true);
     }
 
-    public function scopeWorkshop($query, $workshop)
+    public function scopeWorkshop($query)
+    {
+        return $query->where('type', 'Workshop')->where('payment', true);
+    }
+
+    public function scopeCertainWorkshop($query, $workshop)
     {
         return $query->where('type', 'Workshop')->where('workshop', $workshop)->where('payment', true);
     }

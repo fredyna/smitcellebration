@@ -19,11 +19,11 @@
                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">National Seminar</div>
                 <div class="row no-gutters align-items-center">
                   <div class="col-auto">
-                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">0</div>
+                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{ $seminar }}</div>
                   </div>
                   <div class="col">
                     <div class="progress progress-sm mr-2">
-                      <div class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar bg-info" role="progressbar" style="width: {{ $prosen_seminar }}%" aria-valuenow="{{ $seminar }}" aria-valuemin="0" aria-valuemax="200"></div>
                     </div>
                   </div>
                 </div>
@@ -45,11 +45,11 @@
                 <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Workshop - Mastering Flutter</div>
                 <div class="row no-gutters align-items-center">
                   <div class="col-auto">
-                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">0</div>
+                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{ $workshop1 }}</div>
                   </div>
                   <div class="col">
                     <div class="progress progress-sm mr-2">
-                      <div class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar bg-info" role="progressbar" style="width: {{ $prosen_workshop1 }}%" aria-valuenow="{{ $workshop1 }}" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
                 </div>
@@ -71,11 +71,11 @@
                 <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Workshop - Cyber Security</div>
                 <div class="row no-gutters align-items-center">
                   <div class="col-auto">
-                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">0</div>
+                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{ $workshop2 }}</div>
                   </div>
                   <div class="col">
                     <div class="progress progress-sm mr-2">
-                      <div class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar bg-info" role="progressbar" style="width: {{ $prosen_workshop2 }}%" aria-valuenow="0" aria-valuemin="{{ $workshop2 }}" aria-valuemax="100"></div>
                     </div>
                   </div>
                 </div>
@@ -97,11 +97,11 @@
                 <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">E-Spot Competition (Team)</div>
                 <div class="row no-gutters align-items-center">
                   <div class="col-auto">
-                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">0</div>
+                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{ $competition }}</div>
                   </div>
                   <div class="col">
                     <div class="progress progress-sm mr-2">
-                      <div class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar bg-info" role="progressbar" style="width: {{ $prosen_competition }}%" aria-valuenow="{{ $competition }}" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
                 </div>
@@ -138,9 +138,34 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td colspan="5" class="text-center"><i>No data</i></td>
-                  </tr>
+                  @php
+                    $no = 1;
+                  @endphp
+                  @if (isset($new_participants) && $new_participants->count() > 0)
+                    @foreach ($new_participants as $participant)
+                      <tr>
+                        <td>{{ $no++ }}</td>
+                        <td>{{ $participant->name }}</td>
+                        <td>{{ $participant->instance }}</td>
+                        <td>
+                            {{ 
+                                $participant->type == 'Seminar' ? 
+                                    'Seminar Nasional':'Workshop'
+                            }}
+                        </td>
+                        <td>
+                            {{ 
+                                $participant->created_at->localeMonth . ' ' . $participant->created_at->day . ', ' . 
+                                $participant->created_at->year
+                            }}
+                        </td>
+                      </tr>
+                    @endforeach
+                  @else
+                      <tr>
+                          <td colspan="5" class="text-center"><i>No data</i></td>
+                      </tr>
+                  @endif 
                 </tbody>
               </table>
             </div>
@@ -164,9 +189,27 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td colspan="5" class="text-center"><i>No data</i></td>
-                  </tr>
+                  @php
+                    $no = 1;
+                  @endphp
+                  @if (isset($new_members) && $new_members->count() > 0)
+                      @foreach ($new_members as $member)
+                        <tr>
+                          <td>{{ $no++ }}</td>
+                          <td>{{ $member->team_name }}</td>
+                          <td>
+                              {{ 
+                                  $member->created_at->localeMonth . ' ' . $member->created_at->day . ', ' . 
+                                  $member->created_at->year
+                              }}
+                          </td>
+                        </tr>
+                      @endforeach
+                  @else
+                      <tr>
+                          <td colspan="6" class="text-center"><i>No data</i></td>
+                      </tr>
+                  @endif 
                 </tbody>
               </table>
             </div>

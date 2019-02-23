@@ -21,11 +21,6 @@ class EventController extends Controller
         return view('form.workshop');
     }
 
-    public function competition()
-    {
-
-    }
-
     public function store(Request $request)
     {
         $this->validate($request, [
@@ -74,7 +69,7 @@ class EventController extends Controller
         $event = Event::create($data);
 
         if($event){
-            // Mail::to($event->email)->send(new RegistrationEventMail($event));
+            Mail::to($event->email)->send(new RegistrationEventMail($event));
             return redirect()->back()->with('success', 'Registrasi Berhasil. Silahkan cek email untuk informasi selanjutnya, jika tidak ditemukan maka cek email spam!');
         } else {
             return redirect()->back()->with('error', 'Registrasi Gagal, silahkan coba lagi dan pastikan data dicek terlebih dahulu.');
@@ -89,31 +84,7 @@ class EventController extends Controller
 
     public function cekWorkshop($workshop)
     {
-        $participants = Event::workshop($workshop)->count(); 
-        return $participants >= 1 ? true:false;
-    }
-
-    public function storeCompetition(Request $request)
-    {
-        $this->validate($request, [
-            'type'          => 'required',
-            'name'          => 'required',
-            'gender'        => [
-                'required',
-                Rule::in(['Laki-Laki', 'Perempuan']),
-            ],
-            'instance'      => 'required',
-            'email' => [
-                'required',
-                'email',
-                Rule::unique('events')->where(function ($query) {
-                    return $query->where('type', $request->type);
-                }),
-            ],
-            'phone_number'         => 'required',
-            'address'       => 'required',             
-        ]);
-
-        dd($request);
+        $participants = Event::certainWorkshop($workshop)->count(); 
+        return $participants >= 30 ? true:false;
     }
 }

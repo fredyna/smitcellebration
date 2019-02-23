@@ -36,7 +36,7 @@
                   </div>
 
                   <div class="form-group {{ $errors->has('gender') ? 'has-error':'' }}">
-                    <select name="gender" class="form-control form-control-user" required>
+                    <select name="gender" class="form-control" required>
                       <option value="" style="display:none;">-- Pilih Jenis Kelamin --</option>
                       <option value="Laki-Laki" {{ old('gender') == 'Laki-Laki'? 'selected':'' }}>Laki-Laki</option>
                       <option value="Perempuan" {{ old('gender') == 'Perempuan'? 'selected':'' }}>Perempuan</option>

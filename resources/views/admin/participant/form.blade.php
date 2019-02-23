@@ -5,7 +5,7 @@
   <div class="container-fluid">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-4 text-gray-800"><i class="fas fa-fw fa-users"></i> Participants <small>/ New Participants</small></h1>
+    <h1 class="h3 mb-4 text-gray-800"><i class="fas fa-fw fa-users"></i> Participants <small>/ Edit Participants</small></h1>
 
     <!-- div row -->
     <div class="row">
@@ -137,19 +137,9 @@
     <script src="{{ asset('vendor/datatables/dataTables.bootstrap4.min.js') }}"></script>
 
     <script>
-        // Call the dataTables jQuery plugin
-        $(document).ready(function() {
-            $('#participant-table').DataTable();
-        });
 
         $(function(){
             $("#menu-participants").addClass('active');
-            $("#sub-menu-new").addClass('active');
         });
-
-        function deleteData()
-        {
-
-        }
     </script>
 @endsection

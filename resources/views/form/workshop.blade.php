@@ -28,7 +28,7 @@
                   <input type="hidden" class="form-control form-control-user" name="type" value="Workshop">
 
                   <div class="form-group {{ $errors->has('workshop') ? 'has-error':'' }}">
-                    <select name="workshop" class="form-control form-control-user" required>
+                    <select name="workshop" class="form-control" required>
                       <option value="" style="display:none;">-- Pilih Workshop --</option>
                       <option value="Mastering Flutter" {{ old('workshop') == 'Mastering Flutter'? 'selected':'' }}>Mastering Flutter</option>
                       <option value="Cyber Security" {{ old('workshop') == 'Cyber Security'? 'selected':'' }}>Cyber Security</option>
@@ -48,7 +48,7 @@
                   </div>
 
                   <div class="form-group {{ $errors->has('gender') ? 'has-error':'' }}">
-                    <select name="gender" class="form-control form-control-user" required>
+                    <select name="gender" class="form-control" required>
                       <option value="" style="display:none;">-- Pilih Jenis Kelamin --</option>
                       <option value="Laki-Laki" {{ old('gender') == 'Laki-Laki'? 'selected':'' }}>Laki-Laki</option>
                       <option value="Perempuan" {{ old('gender') == 'Perempuan'? 'selected':'' }}>Perempuan</option>
