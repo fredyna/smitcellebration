@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/seminar-detail', 'HomeController@seminar')->name('detail.seminar');
+Route::get('/workshop-detail', 'HomeController@workshop')->name('detail.workshop');
+Route::get('/competition-detail', 'HomeController@competition')->name('detail.competition');
 
 Route::get('/seminar', 'EventController@seminar')->name('event.seminar');
 Route::get('/workshop', 'EventController@workshop')->name('event.workshop');

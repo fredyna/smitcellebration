@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1600mm" height="900mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 160000 90000"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil13 {fill:none}
+    .fil0 {fill:#F2F2F3}
+    .fil11 {fill:url(#id1)}
+    .fil5 {fill:url(#id2)}
+    .fil1 {fill:url(#id3)}
+    .fil4 {fill:url(#id4)}
+    .fil2 {fill:url(#id5)}
+    .fil10 {fill:url(#id6)}
+    .fil9 {fill:url(#id7)}
+    .fil7 {fill:url(#id8)}
+    .fil8 {fill:url(#id9)}
+    .fil12 {fill:url(#id10)}
+    .fil3 {fill:url(#id11)}
+    .fil6 {fill:url(#id12)}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <path d="M0 0l160000 0 0 90000 -160000 0 0 -90000z"/>
+   </clipPath>
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="135379" y1="155021" x2="131158" y2="149896">
+   <stop offset="0" style="stop-opacity:1; stop-color:#14A085"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#99FF99"/>
+  </linearGradient>
+  <linearGradient id="id2" gradientUnits="userSpaceOnUse" xlink:href="#id1" x1="133411" y1="62341.1" x2="173749" y2="49385">
+  </linearGradient>
+  <linearGradient id="id3" gradientUnits="userSpaceOnUse" xlink:href="#id1" x1="29568.2" y1="6498.74" x2="-1211.95" y2="37413.1">
+  </linearGradient>
+  <linearGradient id="id4" gradientUnits="userSpaceOnUse" xlink:href="#id1" x1="124702" y1="65971.7" x2="165713" y2="19796.5">
+  </linearGradient>
+  <linearGradient id="id5" gradientUnits="userSpaceOnUse" xlink:href="#id1" x1="34161.8" y1="27103" x2="-12679.4" y2="68713.8">
+  </linearGradient>
+  <linearGradient id="id6" gradientUnits="userSpaceOnUse" xlink:href="#id1" x1="163768" y1="139081" x2="145932" y2="122795">
+  </linearGradient>
+  <linearGradient id="id7" gradientUnits="userSpaceOnUse" xlink:href="#id1" x1="170778" y1="139787" x2="119986" y2="94665.7">
+  </linearGradient>
+  <linearGradient id="id8" gradientUnits="userSpaceOnUse" xlink:href="#id1" x1="156283" y1="108841" x2="138446" y2="92555.8">
+  </linearGradient>
+  <linearGradient id="id9" gradientUnits="userSpaceOnUse" xlink:href="#id1" x1="127893" y1="124781" x2="123672" y2="119656">
+  </linearGradient>
+  <linearGradient id="id10" gradientUnits="userSpaceOnUse" xlink:href="#id1" x1="115591" y1="148407" x2="110234" y2="142521">
+  </linearGradient>
+  <linearGradient id="id11" gradientUnits="userSpaceOnUse" xlink:href="#id1" x1="43155.1" y1="19153" x2="38214.8" y2="24581.3">
+  </linearGradient>
+  <linearGradient id="id12" gradientUnits="userSpaceOnUse" xlink:href="#id1" x1="41803.4" y1="121516" x2="977.49" y2="122243">
+  </linearGradient>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0" points="0,0 160000,0 160000,90000 0,90000 "/>
+  <g style="clip-path:url(#id0)">
+   <g id="_483668888">
+    <g>
+     <path id="1" class="fil1" d="M30650 5484l0 0c-887,-887 -2339,-887 -3226,0l-29718 29718c-887,887 -887,2339 0,3226l0 0c887,887 2339,887 3226,0l29718 -29718c887,-887 887,-2339 0,-3226z"/>
+     <path class="fil2" d="M-17394 64083l11645 -11644 14144 -14145 15574 -15573c887,-887 2339,-887 3226,0l0 0c887,887 887,2339 0,3226l-15574 15573 -4974 4974c-887,887 -887,2339 0,3226l0 0c887,887 2339,887 3226,0l4974 -4974 20138 -20137c887,-887 2339,-888 3226,0l0 0c887,887 887,2338 0,3226l-20138 20137 -9580 9581 -16209 16208 -9678 -9678z"/>
+     <path class="fil3" d="M43040 19512l0 0c-887,-888 -2338,-887 -3226,0l-1484 1485c-888,887 -888,2338 0,3226l0 0c887,887 2338,887 3225,0l1485 -1485c888,-888 888,-2339 0,-3226z"/>
+    </g>
+    <g>
+     <path class="fil4" d="M167890 19309c-11259,-9044 -35660,-4768 -44403,6118 -8742,10885 -13825,32210 -2566,41253 11259,9043 39445,4047 48188,-6839 8966,-11163 9749,-31723 -1219,-40532z"/>
+     <path class="fil5" d="M176507 49685c-3509,-9641 -19908,-16031 -29229,-12639 -9321,3393 -20264,14476 -16755,24117 3509,9642 22474,16989 31795,13596 9559,-3479 17608,-15681 14189,-25074z"/>
+    </g>
+    <path class="fil6" d="M22894 76676c14258,1086 18786,9241 19887,19886 -1967,14331 -12753,17005 -19887,19887 -7133,2881 -7653,8749 0,10862 7654,2113 18385,8187 19887,19886 -399,13662 -8169,19002 -19887,19887l-22894 0 0 -89238c7632,-390 15263,-780 22894,-1170z"/>
+    <g>
+     <g>
+      <path class="fil7" d="M129503 118560l0 0c962,962 2536,962 3498,0l32225 -32225c962,-962 962,-2536 0,-3498l0 0c-962,-962 -2536,-962 -3498,0l-32225 32225c-962,962 -962,2536 0,3498z"/>
+      <path class="fil8" d="M123228 124773l0 0c962,962 2536,962 3498,0l1610 -1610c962,-962 962,-2536 0,-3498l0 0c-962,-962 -2536,-962 -3498,0l-1610 1610c-962,962 -962,2536 0,3498z"/>
+     </g>
+     <g>
+      <path class="fil9" d="M175890 99687l-12626 12626 -15338 15338 -16887 16887c-962,962 -2537,962 -3499,0l0 0c-962,-962 -962,-2536 0,-3498l16888 -16887 5393 -5394c962,-962 962,-2536 0,-3498l0 0c-962,-962 -2536,-962 -3498,0l-5393 5394 -21837 21836c-962,962 -2536,962 -3498,0l0 0c-962,-962 -962,-2536 0,-3498l21836 -21836 10389 -10389 17576 -17576 10494 10495z"/>
+      <g>
+       <path class="fil10" d="M136988 148800l0 0c962,962 2536,962 3498,0l32226 -32225c962,-962 962,-2536 0,-3498l0 0c-962,-962 -2537,-962 -3498,0l-32226 32225c-962,962 -962,2536 0,3498z"/>
+       <path class="fil11" d="M130714 155012l0 0c962,962 2536,962 3498,0l1610 -1610c962,-962 962,-2536 0,-3498l0 0c-962,-962 -2536,-962 -3498,0l-1610 1610c-962,962 -962,2537 0,3498z"/>
+      </g>
+      <path class="fil12" d="M110358 148018l0 0c962,962 2536,962 3498,0l1610 -1610c962,-962 962,-2536 0,-3498l0 0c-962,-962 -2536,-962 -3498,0l-1610 1610c-962,962 -962,2536 0,3498z"/>
+     </g>
+    </g>
+   </g>
+  </g>
+  <polygon class="fil13" points="0,0 160000,0 160000,90000 0,90000 "/>
+ </g>
+</svg>
