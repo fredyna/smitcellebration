@@ -101,6 +101,22 @@
                     @endif
                   </div>
 
+                  <div class="form-group {{ $errors->has('member_4') ? 'has-error':'' }}">
+                    <input type="text" class="form-control form-control-user" name="member_4" placeholder="Masukan nama member 4..." value="{{ old('member_4') }}">
+
+                    @if ($errors->has('member_4'))
+                        <p class="text-danger">{{ $errors->first('member_4') }}</p>
+                    @endif
+                  </div>
+
+                  <div class="form-group {{ $errors->has('member_5') ? 'has-error':'' }}">
+                    <input type="text" class="form-control form-control-user" name="member_5" placeholder="Masukan nama member 5..." value="{{ old('member_5') }}">
+
+                    @if ($errors->has('member_5'))
+                        <p class="text-danger">{{ $errors->first('member_5') }}</p>
+                    @endif
+                  </div>
+
                   <button type="submit" name="submit" value="submit" class="btn btn-success btn-user btn-block">
                     Daftar
                   </button>

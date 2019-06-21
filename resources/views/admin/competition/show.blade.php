@@ -83,6 +83,20 @@
                     </div>
                 </div>
 
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Member 4</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control-plaintext" value="{{ $member->member_4 }}" readonly>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Member 5</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control-plaintext" value="{{ $member->member_5 }}" readonly>
+                    </div>
+                </div>
+
                 @if (!$member->payment)
                     <button type="button" class="btn btn-success" onclick="acceptParticipant()"><i class="fas fa-check"></i> Accept</button>
                 @endif
@@ -94,7 +108,7 @@
     <!-- end div row -->
 
   </div>
-  <!-- /.container-fluid -->    
+  <!-- /.container-fluid -->
 @endsection
 
 @section('js')

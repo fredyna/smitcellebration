@@ -716,6 +716,7 @@ h6 {
 
 #sponsors {
   padding: 60px 0;
+  background-color: #f1f1f1;
   /* box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1); */
 }
 
@@ -753,6 +754,10 @@ h6 {
 
 #sponsors img {
   transition: all 0.4s ease-in-out;
+}
+
+#sponsors.media-partner{
+    background-color: #fff;
 }
 
 /* Contact Section
@@ -1158,7 +1163,7 @@ h6 {
   #about {
     padding: 70px 0 70px 0;
   }
-  
+
 }
 
 @media (max-width: 574px) {
@@ -1166,7 +1171,15 @@ h6 {
     height: 667px;
   }
 
+  #detail-program #intro{
+    height: 667px;
+  }
+
   #bg-intro{
+    display: none;
+  }
+
+  #detail-program #bg-intro {
     display: none;
   }
 
@@ -1177,10 +1190,21 @@ h6 {
     margin-top: 50%;
   }
 
+  #detail-program #intro .intro-info {
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin-top: 70%;
+  }
+
   #intro .intro-info h2 {
     font-size: 34px;
   }
-  
+
+  #detail-program #intro .intro-info h2 {
+    font-size: 34px;
+  }
+
   .section-header p{
     width: 100%;
     font-size: 12px;
@@ -1222,10 +1246,10 @@ Table of Content:
 03/ header
 04/ profile
 05/ button
-06/ skill 
-07/ portfolio 
+06/ skill
+07/ portfolio
 08/ blog
-09/ footer 
+09/ footer
 =====================================================================*/
 /*----------------------------------------------------*/
 /*font Variables*/
@@ -1467,190 +1491,8 @@ body, p, h1, h2, h3, h4, h5, h6 {
   margin-top: 80px;
 }
 
-/* End Header Menu Area css
-============================================================================================ */
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
-/* About Person area css
-============================================================================================ */
-.about_person_area {
-  background: #fff;
-  margin-top: 60px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
+/* End Header Menu Area css */
 
-.about_person_area .person_img {
-  max-width: 322px;
-}
-
-.about_person_area .person_img img {
-  max-width: 100%;
-}
-
-.about_person_area .person_img .download_btn {
-  margin-top: 40px;
-}
-
-.about_person_area .person_details {
-  margin-left: -30px;
-}
-
-.about_person_area .person_details h3 {
-  font-size: 36px;
-  color: #333333;
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  padding-bottom: 10px;
-}
-
-.about_person_area .person_details h3 span {
-  color: #fec608;
-}
-
-.about_person_area .person_details h4 {
-  font-size: 18px;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  color: #666666;
-  padding-bottom: 15px;
-}
-
-.about_person_area .person_details p {
-  font-size: 13px;
-  line-height: 24px;
-  color: #333333;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-}
-
-.about_person_area .person_details .person_information {
-  padding: 15px 0px 25px 0px;
-}
-
-.about_person_area .person_details .person_information ul {
-  display: inline-block;
-}
-
-.about_person_area .person_details .person_information ul li a {
-  font-size: 13px;
-  line-height: 26px;
-  color: #333333;
-  font-family: "Raleway", sans-serif;
-}
-
-.about_person_area .person_details .person_information ul + ul {
-  padding-left: 55px;
-}
-
-.about_person_area .person_details .person_information ul + ul li a {
-  font-size: 13px;
-  line-height: 26px;
-  color: #666666;
-  font-family: "Raleway", sans-serif;
-}
-
-.social_icon li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.social_icon li a {
-  height: 40px;
-  width: 40px;
-  text-align: center;
-  border: 1px solid #677fb5;
-  display: block;
-  line-height: 40px;
-  font-size: 18px;
-  border-radius: 5px;
-  transition: all 400ms linear 0s;
-  color: #677fb5;
-}
-
-.social_icon li:nth-child(2) a {
-  color: #70c2e9;
-  border-color: #70c2e9;
-}
-
-.social_icon li:nth-child(2):hover a {
-  background: #70c2e9;
-}
-
-.social_icon li:nth-child(3) a {
-  color: #895a4d;
-  border-color: #895a4d;
-}
-
-.social_icon li:nth-child(3):hover a {
-  background: #895a4d;
-}
-
-.social_icon li:nth-child(4) a {
-  color: #d34836;
-  border-color: #d34836;
-}
-
-.social_icon li:nth-child(4):hover a {
-  background: #d34836;
-}
-
-.social_icon li:nth-child(5) a {
-  color: #007ab9;
-  border-color: #007ab9;
-}
-
-.social_icon li:nth-child(5):hover a {
-  background: #007ab9;
-}
-
-.social_icon li:nth-child(6) a {
-  color: #d8545d;
-  border-color: #d8545d;
-}
-
-.social_icon li:nth-child(6):hover a {
-  background: #d8545d;
-}
-
-.social_icon li:nth-child(7) a {
-  color: #5ecbf3;
-  border-color: #5ecbf3;
-}
-
-.social_icon li:nth-child(7):hover a {
-  background: #5ecbf3;
-}
-
-.social_icon li:nth-child(8) a {
-  color: #ff3ba4;
-  border-color: #ff3ba4;
-}
-
-.social_icon li:nth-child(8):hover a {
-  background: #ff3ba4;
-}
-
-.social_icon li:last-child {
-  margin-right: 0px;
-}
-
-.social_icon li:last-child a {
-  color: #faaa5e;
-  border-color: #faaa5e;
-}
-
-.social_icon li:last-child:hover a {
-  background: #faaa5e;
-}
-
-.social_icon li:hover a {
-  background: #677fb5;
-  color: #fff;
-}
-
-/* End About Person area css
 ============================================================================================ */
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
@@ -1763,69 +1605,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* End Download BTN area css
-============================================================================================ */
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
-/* Skill Area css
-============================================================================================ */
-.myskill_area .skill_text {
-  padding-bottom: 28px;
-}
 
-.myskill_area .skill_text h4 {
-  font-family: "Raleway", sans-serif;
-  color: #333333;
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding-bottom: 25px;
-}
-
-.myskill_area .skill_text p {
-  font-size: 13px;
-  line-height: 24px;
-  font-family: "Raleway", sans-serif;
-  color: #333333;
-}
-
-.myskill_area .skill_item_inner .single_skill h4 {
-  font-size: 16px;
-  color: #333333;
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding-bottom: 5px;
-}
-
-.myskill_area .skill_item_inner .single_skill .progress {
-  margin-bottom: 30px;
-  height: 30px;
-  border-radius: 0px;
-  border: none;
-  box-shadow: none;
-  text-shadow: none;
-  background: #fff;
-}
-
-.myskill_area .skill_item_inner .single_skill .progress .progress-bar {
-  background: #fec608;
-  box-shadow: none;
-}
-
-.myskill_area .skill_item_inner .single_skill .progress .progress-bar .progress_parcent {
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
-  color: #fff;
-  line-height: 30px;
-  text-align: right;
-  padding-right: 10px;
-}
-
-.myskill_area .skill_item_inner .single_skill:last-child .progress {
-  margin-bottom: 0px;
-}
-
-/* End Skill Area css
 ============================================================================================ */
 /* Timeline css
 ============================================================================================ */

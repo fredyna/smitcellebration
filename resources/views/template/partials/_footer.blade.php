@@ -4,7 +4,7 @@
   <footer id="footer">
         <div class="container">
           <div class="copyright">
-            &copy; Copyright 2019 <strong>SMIT Cellebration</strong>
+            &copy; Copyright 2019 <strong>SMIT Celebration</strong>
           </div>
           <div class="credits">
             created by <a href="https://smitphb.org">Team SMIT</a>

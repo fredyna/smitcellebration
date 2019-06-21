@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Competition extends Model
 {
     protected $fillable = [
-        'team_name', 'leader_name', 'leader_gender', 'email', 'phone_number', 
-        'instance', 'member_1', 'member_2', 'member_3'
+        'team_name', 'leader_name', 'leader_gender', 'email', 'phone_number',
+        'instance', 'member_1', 'member_2', 'member_3', 'member_4', 'member_5'
     ];
 
     public function scopeNewTeam($query)

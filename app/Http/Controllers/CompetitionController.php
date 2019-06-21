@@ -25,16 +25,31 @@ class CompetitionController extends Controller
                 Rule::in(['Laki-Laki', 'Perempuan']),
             ],
             'email'              => 'required|email|unique:competitions',
-            'phone_number'       => 'required|min:10|max:13',       
+            'phone_number'       => 'required|min:10|max:13',
         ]);
 
         if($request->member_2 != '')
             $this->validate($request, ['member_1' => 'required']);
-        
+
         if($request->member_3 != '')
             $this->validate($request, [
                 'member_1' => 'required',
                 'member_2' => 'required'
+            ]);
+
+        if($request->member_4 != '')
+            $this->validate($request, [
+                'member_1' => 'required',
+                'member_2' => 'required',
+                'member_3' => 'required',
+            ]);
+
+        if($request->member_5 != '')
+            $this->validate($request, [
+                'member_1' => 'required',
+                'member_2' => 'required',
+                'member_3' => 'required',
+                'member_4' => 'required',
             ]);
 
         if($this->cekCompetition())
@@ -50,6 +65,8 @@ class CompetitionController extends Controller
             'member_1'      => $request->member_1 != '' ? $request->member_1:null,
             'member_2'      => $request->member_2 != '' ? $request->member_2:null,
             'member_3'      => $request->member_3 != '' ? $request->member_3:null,
+            'member_4'      => $request->member_4 != '' ? $request->member_4:null,
+            'member_5'      => $request->member_5 != '' ? $request->member_5:null,
         ];
 
         $competition = Competition::create($data);
@@ -64,7 +81,7 @@ class CompetitionController extends Controller
 
     public function cekCompetition()
     {
-        $team = Competition::team()->count(); 
+        $team = Competition::team()->count();
         return $team >= 40 ? true:false;
     }
 }

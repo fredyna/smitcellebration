@@ -23,7 +23,13 @@ Route::get('/competition', 'CompetitionController@index')->name('competition.ind
 Route::post('/competition', 'CompetitionController@store')->name('competition.store');
 
 
-Route::group(['prefix' => 'admin'], function() {
+//admin
+
+Route::get('/home', function(){
+    return redirect()->route('admin.home');
+});
+
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
     Route::get('/', 'Admin\HomeController@index')->name('admin.home');
     Route::get('/participants', 'Admin\ParticipantsController@index')->name('admin.participants.new');
     Route::get('/participants/seminar', 'Admin\ParticipantsController@seminar')->name('admin.participants.seminar');

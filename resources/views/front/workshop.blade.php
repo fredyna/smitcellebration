@@ -32,12 +32,12 @@
 
                 <header class="section-header">
                     <h3>Detail Acara</h3>
-                    <p>Rincian Acara Workshop SMIT Cellebration</p>
+                    <p>Rincian Acara Workshop SMIT Celebration</p>
                 </header>
 
                 <div class="program-detail">
                     <h4 class="mb-4">Penjelasan Umum</h4>
-                    <p>Salah satu acara SMIT Cellebration di mana peserta akan mendapatkan materi dan ikut mempraktekan secara langsung dengan bimbingan pemateri yang berkompeten di bidangnya. Acara akan diselenggarakan pada Sabtu, 20 April 2019 Pukul 13.00 WIB - Selesai</p>
+                    <p>Salah satu acara SMIT Celebration di mana peserta akan mendapatkan materi dan ikut mempraktekan secara langsung dengan bimbingan pemateri yang berkompeten di bidangnya. Acara akan diselenggarakan pada Sabtu, 20 Juli 2019 Pukul 13.00 WIB - Selesai</p>
                     <br><br>
 
                     <h4 class="mb-4">Narasumber</h4>
@@ -273,8 +273,8 @@
                     <div class="col-lg-4">
                         <div class="">
                             <div class="info">
-                            <i class="ion-ios-location-outline"></i>
-                            <p>Kampus 1 Politeknik Harapan Bersama Tegal</p>
+                                <i class="ion-ios-location-outline"></i>
+                                <p>Kampus 1 Politeknik Harapan Bersama Tegal</p>
                             </div>
                             <div class="info">
                                 <i class="fa fa-facebook"></i>
@@ -285,18 +285,16 @@
                                 <p>@smit_phb</p>
                                 </div>
                             <div class="info">
-                            <i class="ion-ios-email-outline"></i>
-                            <p>smitphb@gmail.com</p>
+                                <i class="ion-ios-email-outline"></i>
+                                <p>smitphb@gmail.com</p>
                             </div>
                             <div class="info">
-                            <i class="ion-ios-telephone-outline"></i>
-                            <p>082334865021</p>
+                                <i class="ion-ios-telephone-outline"></i>
+                                <p>082334865021</p>
                             </div>
+                        </div>
                     </div>
-
-
                 </div>
-
             </div>
         </section>
 

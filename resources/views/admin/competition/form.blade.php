@@ -97,7 +97,7 @@
                     <label class="col-sm-3 col-form-label">Member 1</label>
                     <div class="col-sm-9">
                       <input type="text" name="member_1" class="form-control" value="{{ $member->member_1 }}" placeholder="Insert member 1 name ...">
-  
+
                       @if ($errors->has('member_1'))
                         <p class="text-danger">{{ $errors->first('member_1') }}</p>
                       @endif
@@ -108,7 +108,7 @@
                     <label class="col-sm-3 col-form-label">Member 2</label>
                     <div class="col-sm-9">
                         <input type="text" name="member_2" class="form-control" value="{{ $member->member_2 }}" placeholder="Insert member 2 name ...">
-    
+
                         @if ($errors->has('member_2'))
                         <p class="text-danger">{{ $errors->first('member_2') }}</p>
                         @endif
@@ -119,9 +119,31 @@
                     <label class="col-sm-3 col-form-label">Member 3</label>
                     <div class="col-sm-9">
                         <input type="text" name="member_3" class="form-control" value="{{ $member->member_3 }}" placeholder="Insert member 3 name ...">
-    
+
                         @if ($errors->has('member_3'))
                         <p class="text-danger">{{ $errors->first('member_3') }}</p>
+                        @endif
+                    </div>
+                </div>
+
+                <div class="form-group row {{ $errors->has('member_4') ? 'has-error':'' }}">
+                    <label class="col-sm-3 col-form-label">Member 4</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="member_4" class="form-control" value="{{ $member->member_4 }}" placeholder="Insert member 4 name ...">
+
+                        @if ($errors->has('member_4'))
+                        <p class="text-danger">{{ $errors->first('member_4') }}</p>
+                        @endif
+                    </div>
+                </div>
+
+                <div class="form-group row {{ $errors->has('member_5') ? 'has-error':'' }}">
+                    <label class="col-sm-3 col-form-label">Member 5</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="member_5" class="form-control" value="{{ $member->member_5 }}" placeholder="Insert member 5 name ...">
+
+                        @if ($errors->has('member_5'))
+                        <p class="text-danger">{{ $errors->first('member_5') }}</p>
                         @endif
                     </div>
                 </div>
@@ -136,7 +158,7 @@
     <!-- end div row -->
 
   </div>
-  <!-- /.container-fluid -->    
+  <!-- /.container-fluid -->
 @endsection
 
 @section('js')

@@ -12,7 +12,7 @@
 
         <div class="container">
             <div class="intro-info">
-            <h2>SMIT Cellebration</h2>
+            <h2>SMIT Celebration</h2>
             <p>AN ANUAL EVENT FROM SMIT COMMUNITY</p>
             <a href="#about" class="btn btn-warning scrollto">Explore</a>
 
@@ -30,16 +30,16 @@
             <div class="container">
             <header class="section-header">
                 <h3>About Us</h3>
-                <p>SMIT Cellebration is an annual event from SMIT</p>
+                <p>SMIT Celebration is an annual event from SMIT</p>
             </header>
 
             <div class="row about-container">
                 <div class="col-lg-6 content order-lg-1 order-2" style="text-align:justify;">
                 <p>
-                    SMIT Cellebration adalah ajang bergengsi yang mengangkat tema teknologi terbaru yang diselenggarakan tahunan dari Komunitas SMIT Politeknik Harapan Bersama.
+                    SMIT Celebration adalah ajang bergengsi yang mengangkat tema teknologi terbaru yang diselenggarakan tahunan dari Komunitas SMIT Politeknik Harapan Bersama.
                 </p>
                 <br/>
-                <p >SMIT Cellebration 2019 memiliki tema “Be Succes With Technology". Acara ini memiliki berbagai rangkaian kegiatan, dengan rangkaian kegiatan terdiri dari Seminar Nasional, Workshop, dan Kompetisi bergengsi.</p>
+                <p >SMIT Celebration 2019 memiliki tema “Be Succes With Technology". Acara ini memiliki berbagai rangkaian kegiatan, dengan rangkaian kegiatan terdiri dari Seminar Nasional, Workshop, dan Kompetisi bergengsi.</p>
                 </div>
                 <!-- <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
                 <img  src="img/intro-img.svg" alt="" class="img-fluid">
@@ -56,7 +56,7 @@
 
             <header class="section-header">
                 <h3>Event Us</h3>
-                <p>List of all event in SMIT Cellebration 2019</p>
+                <p>List of all event in SMIT Celebration 2019</p>
             </header>
 
             <div class="row">
@@ -91,7 +91,7 @@
                     <div class="card-body">
                         <img class="mx-auto d-block" style="width:100px; margin:20px;" src="{{ asset('front/img/icon/game.png') }}" alt="Image competition">
                         <h5 class="card-title">E-SPORT COMPETITION</h5>
-                        <p class="card-text">Tunjukan kemampuan dan kerja sama tim kamu di "Tournament PUBG Mobile".</p>
+                        <p class="card-text">Tunjukan kemampuan dan kerja sama tim kamu di "Tournament Mobile Legend".</p>
                     </div>
                     <div class="card-footer">
                     <a href="{{ route('detail.competition') }}" class="btn btn-success btn-event">Selengkapnya </a>
@@ -121,7 +121,7 @@
                 <article class="timeline-entry">
 
                 <div class="timeline-entry-inner">
-                    <time class="timeline-time"><span>1 Mar 19</span> <span>Until 18 Apr 19</span></time>
+                    <time class="timeline-time"><span>1 Juni 19</span> <span>Until 19 Juli 19</span></time>
 
                     <div class="timeline-icon bg-success">
                     <i class="entypo-feather"></i>
@@ -129,7 +129,7 @@
 
                     <div class="timeline-label">
                     <h2><a href="#">Registration Acara</a> <span>seminar, workshop, kompetisi</span></h2>
-                    <blockquote>Dapatkan tiket untuk mengikuti seminar nasional, workshop dengan memilih salah satu kelas, dan kompetisi e-sport segera. Cari informasi selengkapnya di web atau kontak masing-masing CP acara. Kuota tiket untuk masing-masing acara terbatas, dan juga jadwal pendaftaran terbatas sampai 18 April 2019</blockquote>
+                    <blockquote>Dapatkan tiket untuk mengikuti seminar nasional, workshop dengan memilih salah satu kelas, dan kompetisi e-sport segera. Cari informasi selengkapnya di web atau kontak masing-masing CP acara. Kuota tiket untuk masing-masing acara terbatas, dan juga jadwal pendaftaran terbatas sampai 19 Juli 2019</blockquote>
                     </div>
                 </div>
 
@@ -139,7 +139,7 @@
                 <article class="timeline-entry left-aligned">
 
                 <div class="timeline-entry-inner">
-                    <time class="timeline-time" datetime="2014-01-10T03:45"><span>19 Apr 19</span> <span>Sore</span></time>
+                    <time class="timeline-time" datetime="2014-01-10T03:45"><span>19 Juli 19</span> <span>Sore</span></time>
 
                     <div class="timeline-icon bg-warning">
                     <i class="entypo-suitcase"></i>
@@ -157,7 +157,7 @@
                 <article class="timeline-entry">
 
                 <div class="timeline-entry-inner">
-                    <time class="timeline-time" datetime="2014-01-09T13:22"><span>20 Apr 19</span> <span>Siang - Sore</span></time>
+                    <time class="timeline-time" datetime="2019-07-20T08:00"><span>20 Juli 19</span> <span>Pagi - Siang</span></time>
 
                     <div class="timeline-icon bg-success">
                     <i class="entypo-location"></i>
@@ -177,7 +177,7 @@
                 <article class="timeline-entry left-aligned">
 
                 <div class="timeline-entry-inner">
-                    <time class="timeline-time"><span>20 Apr 19</span> <span>Pagi - Siang</span></time>
+                    <time class="timeline-time"><span>20 Juli 19</span> <span>Siang - Sore</span></time>
 
                     <div class="timeline-icon bg-warning">
                     <i class="entypo-camera"></i>
@@ -195,7 +195,7 @@
                 <article class="timeline-entry">
 
                 <div class="timeline-entry-inner">
-                    <time class="timeline-time" datetime="2014-01-09T13:22"><span>21 Apr 19</span> <span>Pagi - Selesai</span></time>
+                    <time class="timeline-time" datetime="2014-07-21T09:00"><span>21 Juli 19</span> <span>Pagi - Selesai</span></time>
 
                     <div class="timeline-icon bg-success">
                     <i class="entypo-location"></i>
@@ -203,9 +203,7 @@
 
                     <div class="timeline-label">
                         <h2><a href="#">Kompetisi E-Sport</a></h2>
-                        <blockquote>Pelaksanaan "Tournament PUBG Mobile"</blockquote>
-
-
+                        <blockquote>Pelaksanaan "Tournament Mobile Legends"</blockquote>
                     </div>
                 </div>
 
@@ -302,7 +300,7 @@
         <!--==========================
             Media Partner Section
         ============================-->
-        <section id="sponsors" class="section-bg">
+        <section id="sponsors" class="section-bg media-partner">
 
             <div class="container">
 

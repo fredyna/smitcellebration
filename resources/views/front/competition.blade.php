@@ -15,7 +15,7 @@
         <div class="container">
           <div class="intro-info">
             <h2>E-Sport Competition</h2>
-            <p>"Tournament PUBG Mobile"</p>
+            <p>"Tournament Mobile Legends"</p>
           <a href="{{ route('competition.index') }}" class="btn btn-warning">Registrasi</a>
           </div>
 
@@ -32,12 +32,12 @@
 
             <header class="section-header">
               <h3>Detail Acara</h3>
-              <p>Rincian Acara E-sport Competition SMIT Cellebration</p>
+              <p>Rincian Acara E-sport Competition SMIT Celebration</p>
             </header>
 
             <div class="program-detail">
                 <h4 class="mb-4">Penjelasan Umum</h4>
-                <p>Salah satu acara SMIT Cellebration di mana tim yang telah terdaftar diharuskan menunjukan kemampuan dan kerja sama tim untuk memenangkan kompetisi PUBG Mobile. Acara akan diselenggarakan pada Sabtu, 21 April 2019 Pukul 09.00 WIB - Selesai</p>
+                <p>Salah satu acara SMIT Celebration di mana tim yang telah terdaftar diharuskan menunjukan kemampuan dan kerja sama tim untuk memenangkan kompetisi Mobile Legends. Acara akan diselenggarakan pada Sabtu, 21 Juli 2019 Pukul 09.00 WIB - Selesai</p>
                 <br><br>
 
                 <div class="row">
@@ -72,7 +72,7 @@
                   <tbody>
                     <tr>
                       <td style="width:100px;">Subject</td>
-                      <td> : BuktiBayar_SemNas_SC#_NamaAnda</td>
+                      <td> : BuktiBayar_esport_NamaTimAnda</td>
                     </tr>
                     <tr>
                       <td style="width:100px;">Catatan</td>

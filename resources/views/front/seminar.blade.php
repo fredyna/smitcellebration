@@ -32,12 +32,12 @@
 
                 <header class="section-header">
                 <h3>Detail Acara</h3>
-                <p>Rincian Acara Seminar Nasional SMIT Cellebration</p>
+                <p>Rincian Acara Seminar Nasional SMIT Celebration</p>
                 </header>
 
                 <div class="program-detail">
                     <h4 class="mb-4">Penjelasan Umum</h4>
-                    <p>Salah satu acara SMIT Cellebration di mana peserta akan mendapatkan materi seminar dengan tema "When Developer Should be Hacker". Acara akan diselenggarakan pada Sabtu, 20 April 2019 Pukul 08.00 WIB - Selesai</p>
+                    <p>Salah satu acara SMIT Celebration di mana peserta akan mendapatkan materi seminar dengan tema "When Developer Should be Hacker". Acara akan diselenggarakan pada Sabtu, 20 Juli 2019 Pukul 08.00 WIB - Selesai</p>
                     <br><br>
 
                     <h4 class="mb-4">Narasumber</h4>

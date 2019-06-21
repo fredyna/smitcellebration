@@ -57,18 +57,33 @@ class MemberCompetitionController extends Controller
                 Rule::in(['Laki-Laki', 'Perempuan']),
             ],
             'email'              => 'required|email',
-            'phone_number'       => 'required|min:10|max:13',       
+            'phone_number'       => 'required|min:10|max:13',
         ]);
 
         if($request->member_2 != '')
             $this->validate($request, ['member_1' => 'required']);
-        
+
         if($request->member_3 != '')
             $this->validate($request, [
                 'member_1' => 'required',
                 'member_2' => 'required'
             ]);
-        
+
+        if($request->member_4 != '')
+            $this->validate($request, [
+                'member_1' => 'required',
+                'member_2' => 'required',
+                'member_3' => 'required',
+            ]);
+
+        if($request->member_5 != '')
+            $this->validate($request, [
+                'member_1' => 'required',
+                'member_2' => 'required',
+                'member_3' => 'required',
+                'member_4' => 'required',
+            ]);
+
         $member = Competition::find($id);
         $member->team_name     = $request->team_name;
         $member->leader_name   = $request->leader_name;
@@ -79,6 +94,8 @@ class MemberCompetitionController extends Controller
         $member->member_1      = $request->member_1;
         $member->member_2      = $request->member_2;
         $member->member_3      = $request->member_3;
+        $member->member_4      = $request->member_4;
+        $member->member_5      = $request->member_5;
 
         if($member->save()){
             return redirect()->back()->with('success', 'Success!, Update data success.');
