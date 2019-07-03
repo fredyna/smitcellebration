@@ -90,7 +90,7 @@ class MemberCompetitionController extends Controller
         $member->leader_gender = $request->leader_gender;
         $member->email         = $request->email;
         $member->phone_number  = $request->phone_number;
-        $member->instance      = $request->instance;
+        $member->instance      = !empty($request->instance) ? $request->instance:'Tidak Ada';
         $member->member_1      = $request->member_1;
         $member->member_2      = $request->member_2;
         $member->member_3      = $request->member_3;

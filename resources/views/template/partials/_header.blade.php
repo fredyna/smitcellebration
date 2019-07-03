@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>SMIT Cellebration</title>
+  <title>SMIT Celebration</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="description" content="Web SMIT Cellebration">
   <meta name="author" content="Fredy Nur Apriyanto">

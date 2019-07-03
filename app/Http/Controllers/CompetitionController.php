@@ -59,7 +59,7 @@ class CompetitionController extends Controller
             'team_name'     => $request->team_name,
             'leader_name'   => $request->leader_name,
             'leader_gender' => $request->leader_gender,
-            'instance'      => $request->instance,
+            'instance'      => !empty($request->instance) ? $request->instance:'tidak ada',
             'email'         => $request->email,
             'phone_number'  => $request->phone_number,
             'member_1'      => $request->member_1 != '' ? $request->member_1:null,
